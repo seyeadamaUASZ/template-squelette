@@ -1,0 +1,70 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light back">
+    <div class="container-fluid">
+      <a class="navbar-brand colour" href="#">Gestion personnelle</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/layout"><span class="colour">Dashboard</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/layout/employee"> <span class="colour"><span class="colour">Gestion des employés</span></span></a>
+          </li>
+
+          <li class="nav-item">
+        
+            <a class="nav-link" routerLink='' tabindex="-1" aria-disabled="true">
+              <span class="colour">Déconnecter</span> 
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn" type="submit"> <span class="colour">Rechercher</span></button>
+        </form>
+      </div>
+    </div>
+  </nav> -->
+
+
+  <div class="topbar">
+    <div class="toggle-sidebar">
+        <a href="javaScript:(0);"><i class="bx bx-menu"></i></a>
+    </div>
+    <div>
+        <div class="user-wrapper dropdown">
+            <div class="user-avatar">
+                <img width="60" height="60" src="{{ 'assets/images/user.png' }}" alt="user-image" class="rounded-circle" />
+            </div>
+            <span class="user-content">
+                <span>Adama</span>
+                <span>Admin</span>
+            </span>
+
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+            <ul class="dropdown-menu dropdown-menu-lg-end">
+                <li>
+                    <a href="javaScript:(0);" class="dropdown-item">
+                        <i class="fa fa-user-circle"></i>
+                        <span> Mon compte</span>
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="javaScript:(0);"
+                        (click)="onLogout()"
+                        class="dropdown-item"
+                        data-bs-toggle="modal"
+                        data-bs-target="#logoutConfirm"
+                    >
+                        <i class="fa fa-sign-out-alt"></i>
+                        <span> Déconnexion</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
